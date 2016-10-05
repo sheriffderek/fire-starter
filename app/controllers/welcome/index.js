@@ -29,9 +29,24 @@ export default Ember.Controller.extend({
       name: 'ember-cli-stylus',
       url: 'https://github.com/drewcovi/ember-cli-stylus',
       purpose: 'Adds stylus support. If you adopted ES6, I should have to convince you about stylus.'
+    },
+    {
+      name: 'ember-load',
+      url: 'https://github.com/mike-north/ember-load',
+      purpose: 'Application loading UI for Ember.js apps.'
     }
   ],
   cssConsiderations: [
+    {
+      name: 'Meyer reset',
+      url: 'http://meyerweb.com/eric/tools/css/reset/',
+      purpose: 'Reduces browser inconsistencies and allows you write CSS without worrying about outdated browser defaults.'
+    },
+    {
+      name: 'Reset box model',
+      url: 'https://www.paulirish.com/2012/box-sizing-border-box-ftw/',
+      purpose: 'Sets padding and borders to stay inside their elements.'
+    },
     {
       name: 'Meyer reset',
       url: 'http://meyerweb.com/eric/tools/css/reset/',
