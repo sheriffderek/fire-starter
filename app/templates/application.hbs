@@ -1,4 +1,43 @@
 
-<h1>{{applicationName}}</h1>
+<header class='app-header'>
+<div class='inner-w'>
+  
+  <h1>{{applicationName}}</h1>
 
-{{outlet}}
+  <nav class='main-menu'>
+    <ul class='menu'>
+      <li>
+        {{#link-to 'application'}}
+          <span>Welcome</span>
+        {{/link-to}}
+      </li>
+      <li>
+        {{#link-to 'style-guide'}}
+          <span>Style-guide</span>
+        {{/link-to}}
+      </li>
+    </ul>
+  </nav>
+
+</div>
+</header>
+
+
+
+<section class='content'>
+<div class='inner-w'>
+  
+  {{outlet class='application-outlet'}}
+
+</div>
+</section>
+
+
+
+<footer class='app-footer'>
+<div class='inner-w'>
+  
+  <h2>Footer?</h2>
+
+</div>
+</footer>

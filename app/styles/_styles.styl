@@ -1,3 +1,36 @@
 
+// The goal is to write 90% of your custom styles HERE
+// $variables will of course be changed, but things like mixins should become robust enough
+// Any mixins that are not used will be ignored on output, so no reason to worry about size
+// Just use what you like. : )
+
 body
-  background: teal
+  background: $color
+
+.inner-w
+  max-width: $inner-w-width
+  margin: 0 auto // horizontal center
+  padding: $pad
+
+.app-header
+  background: $white
+  h1
+    large-type()
+
+.main-menu
+  //
+  .menu
+    //
+    li
+      display: inline-block
+    a
+      display: block
+      padding: $pad*.5 $pad $pad*.5 0  
+  
+.content
+  background: $black
+  color: $white
+
+.app-footer
+  background: $color
+  color: $white
