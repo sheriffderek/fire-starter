@@ -1,10 +1,13 @@
 
-<h1>Welcome to Fire-starter</h1>
+<header>
+  <h1>Welcome to Fire-starter</h1>
+</header>
+
+<h2>Included packages:</h2>
 
 <ul class='included-packages-list'>
   {{#each packages as |package|}}
     <li>
-
       <h3><a href='{{package.url}}' target='{{package.name}}'>{{package.name}}</a></h3>
       <p>{{package.purpose}}</p>
     </li>

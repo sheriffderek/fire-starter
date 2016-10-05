@@ -1,0 +1,21 @@
+
+@import '_convenience'
+
+balance-inline-block()
+  float: none //
+  display: inline-block
+  vertical-align: middle
+
+translate-center()
+  float: none
+  top: 50% 
+  left: 50%
+  transform: translate(-50%, -50%)
+
+absolute-translate-center()
+  absolute()
+  translate-center()
+
+fixed-translate-center()
+  fixed()
+  translate-center()

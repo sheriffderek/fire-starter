@@ -4,14 +4,21 @@
 // Any mixins that are not used will be ignored on output, so no reason to worry about size
 // Just use what you like. : )
 
+
+// $global
 body
   background: $color
+  color: $black
+p
+  standard-type()
 
+// $structure
 .inner-w
   max-width: $inner-w-width
   margin: 0 auto // horizontal center
   padding: $pad
 
+// $header
 .app-header
   background: $white
   h1
@@ -26,11 +33,19 @@ body
     a
       display: block
       padding: $pad*.5 $pad $pad*.5 0  
-  
+
+// $content
 .content
   background: $black
   color: $white
+  h1
+    extra-large-type()
+  h2
+    large-type()
+  p
+    //
 
+// $footer
 .app-footer
   background: $color
   color: $white
