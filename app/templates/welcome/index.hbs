@@ -1,15 +1,45 @@
 
 <header>
   <h1>Welcome to Fire-starter</h1>
+  <p>This is...</p>
 </header>
 
-<h2>Included packages:</h2>
 
-<ul class='included-packages-list'>
-  {{#each packages as |package|}}
-    <li>
-      <h3><a href='{{package.url}}' target='{{package.name}}'>{{package.name}}</a></h3>
-      <p>{{package.purpose}}</p>
-    </li>
-  {{/each}}
-</ul>
+<section>
+  <h2>Excluded packages:</h2>
+
+  <ul class='included-packages-list'>
+    {{#each excludedPackages as |package|}}
+      <li>
+        <h3><a href='{{package.url}}' target='{{package.name}}'>{{package.name}}</a></h3>
+        <p>{{package.purpose}}</p>
+      </li>
+    {{/each}}
+  </ul>
+</section>
+
+<section>
+  <h2>Included packages:</h2>
+
+  <ul class='included-packages-list'>
+    {{#each includedPackages as |package|}}
+      <li>
+        <h3><a href='{{package.url}}' target='{{package.name}}'>{{package.name}}</a></h3>
+        <p>{{package.purpose}}</p>
+      </li>
+    {{/each}}
+  </ul>
+</section>
+
+<section>
+  <h2>CSS considerations:</h2>
+
+  <ul class='included-packages-list'>
+    {{#each cssConsiderations as |resource|}}
+      <li>
+        <h3><a href='{{resource.url}}' target='{{resource.name}}'>{{resource.name}}</a></h3>
+        <p>{{resource.purpose}}</p>
+      </li>
+    {{/each}}
+  </ul>
+</section>

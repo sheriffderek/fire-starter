@@ -2,7 +2,21 @@
 $black = #111
 $white = #efefef
 
+$gray       = lighten($black, 50%) // black split in half seems like a good starting point
+$gray-light = lighten($gray, 50%)
+$gray-dark  = darken($gray, 50%)
+
 $color = teal
+$color-light = lighten($color, 25%)
+$color-dark = darken($color, 25%)
+
+$highlight = pink
+$highlight-light = lighten($highlight, 25%)
+$highlight-dark = darken($highlight, 25%)
+
+$alternate = yellow
+$alternate-light = lighten($alternate, 25%)
+$alternate-dark = darken($alternate, 25%)
 
 $body-font    = 'georgia'
 $heading-font = 'helvetica'

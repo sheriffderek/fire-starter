@@ -1,10 +1,15 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
-  packages: [
+
+  excludedPackages: [
     {
+      name: 'ember-welcome-page',
+      url: 'https://github.com/ember-cli/ember-welcome-page',
       purpose: 'Removes the default ember-welcome-page'
-    },
+    }
+  ],
+  includedPackages: [
     {
       name: 'ember-cli-eslint',
       url: 'https://github.com/ember-cli/ember-cli-eslint',
@@ -16,19 +21,22 @@ export default Ember.Controller.extend({
       purpose: 'Adds Ember Suave addon to conform to some standard'
     },
     {
-      name: 'Meyer reset',
-      url: 'http://meyerweb.com/eric/tools/css/reset/',
-      purpose: 'Reduces browser inconsistencies and allows you write CSS without worrying about outdated browser defaults.'
+      name: 'ember-cli-autoprefixer',
+      url: 'https://github.com/kimroen/ember-cli-autoprefixer',
+      purpose: 'Automatically runs styles through autoprefixer'
     },
     {
       name: 'ember-cli-stylus',
       url: 'https://github.com/drewcovi/ember-cli-stylus',
       purpose: 'Adds stylus support. If you adopted ES6, I should have to convince you about stylus.'
-    },
+    }
+  ],
+  cssConsiderations: [
     {
-      name: '',
-      url: '',
-      purpose: ''
+      name: 'Meyer reset',
+      url: 'http://meyerweb.com/eric/tools/css/reset/',
+      purpose: 'Reduces browser inconsistencies and allows you write CSS without worrying about outdated browser defaults.'
     },
   ]
+
 });
