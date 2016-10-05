@@ -1,7 +1,7 @@
 {
-  "name": "local-ideas",
+  "name": "fire-starter",
   "version": "0.0.0",
-  "description": "Small description for local-ideas goes here",
+  "description": "Small description for fire-starter goes here",
   "private": true,
   "directories": {
     "doc": "doc",

@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'local-ideas',
+    modulePrefix: 'fire-starter',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
