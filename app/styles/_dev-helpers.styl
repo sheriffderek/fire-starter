@@ -1,0 +1,50 @@
+
+break-point-helper = false
+dev-mode = false
+
+dev-outline($color)
+  if dev-mode
+    border: 1px solid $color
+
+$break-point-1 = '(min-width: 400px)'
+$break-point-2 = '(min-width: 600px)'
+$break-point-3 = '(min-width: 800px)'
+$break-point-4 = '(min-width: 800px)'
+$break-point-5 = '(min-width: 800px)'
+
+break-point-helper($size)
+  relative()
+  fixed()
+  right: 0
+  bottom: 0
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 $size $size;
+  border-color: transparent transparent alpha($black, .5) transparent;
+  display: none
+  if break-point-helper
+    display: block // $revisit
+  span
+    block()
+    fixed()
+    right: ($size/6)
+    bottom: ($size/6)
+    width: auto
+    height: auto
+    color: $white
+    &:after
+      content: 'There is no need to see this'
+      @media $break-point-1
+        content: '1'
+      @media $break-point-2
+        content: '2'
+      @media $break-point-3
+        content: '3'
+      @media $break-point-4
+        content: '4'
+      @media $break-point-5
+        content: '5'
+
+.break-point-helper
+  break-point-helper(50px)
