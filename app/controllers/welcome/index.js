@@ -51,7 +51,7 @@ export default Ember.Controller.extend({
       name: 'Meyer reset',
       url: 'http://meyerweb.com/eric/tools/css/reset/',
       purpose: 'Reduces browser inconsistencies and allows you write CSS without worrying about outdated browser defaults.'
-    },
+    }
   ]
 
 });
