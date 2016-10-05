@@ -20,5 +20,14 @@ fixed-translate-center()
   fixed()
   translate-center()
 
-selectable()
+selectable() // make the text of certain images 'selectable'
   user-select: text
+  
+clear-floats() // explain
+  zoom 1
+  &:after
+  &:before
+    content ""
+    display table
+  &:after
+    clear both
