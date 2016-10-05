@@ -34,6 +34,11 @@ export default Ember.Controller.extend({
       name: 'ember-load',
       url: 'https://github.com/mike-north/ember-load',
       purpose: 'Application loading UI for Ember.js apps.'
+    },
+    {
+      name: 'ember-cli-surge',
+      url: 'https://github.com/kennethormandy/ember-cli-surge',
+      purpose: 'Very fast and simple publishing through the CLI.'
     }
   ],
   cssConsiderations: [
@@ -48,9 +53,9 @@ export default Ember.Controller.extend({
       purpose: 'Sets padding and borders to stay inside their elements.'
     },
     {
-      name: 'Meyer reset',
-      url: 'http://meyerweb.com/eric/tools/css/reset/',
-      purpose: 'Reduces browser inconsistencies and allows you write CSS without worrying about outdated browser defaults.'
+      name: '',
+      url: '',
+      purpose: ''
     }
   ]
 
