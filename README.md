@@ -1,7 +1,6 @@
 # fire-starter
-<<<<<<< 6db3f19725ef8fa8690898fc4c84b5677f4f10dd
+
 An Emberjs skeleton
-=======
 
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
@@ -53,5 +52,3 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
->>>>>>> Changes app name to Fire-starter
