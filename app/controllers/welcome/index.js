@@ -51,11 +51,6 @@ export default Ember.Controller.extend({
       name: 'Reset box model',
       url: 'https://www.paulirish.com/2012/box-sizing-border-box-ftw/',
       purpose: 'Sets padding and borders to stay inside their elements.'
-    },
-    {
-      name: '',
-      url: '',
-      purpose: ''
     }
   ]
 

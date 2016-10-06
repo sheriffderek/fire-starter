@@ -1,23 +1,26 @@
+
+header, section, footer
+  width: 100%
+  float: left  
+
 // swatches
 .swatches
-  padding-bottom: 30px
+  padding-bottom: $pad*2
   div //
     width: 100%
     float: left
-    padding: .3rem
-    text-shadow: 0 0 2px alpha(white, .5)
+    padding: $pad*.5
+    text-shadow: 0 0 1px alpha(white, .7)
     transition: .3s padding ease-in
-
+    height: 60px
+    line-height: 1.1
     @media $break-point-1
       padding: .6rem
       split-in(3)
-      
     @media $break-point-2
       padding: .9rem
-
     @media $break-point-3
       split-in(6)
-
     &.black
       background: $black
     &.white
