@@ -12,6 +12,10 @@ body
 p
   standard-type()
 
+a
+  &:hover
+    color: $color
+
 // $structure
 .inner-w
   max-width: $inner-w-width
@@ -25,6 +29,8 @@ p
   background: $white
   h1
     large-type()
+    medium-icons()
+    balance-inline-block-children()
 
 .main-menu
   //
@@ -32,6 +38,7 @@ p
     //
     li
       display: inline-block
+      margin-bottom: 0 // $revisit
     a
       display: block
       padding: $pad*.5 $pad $pad*.5 0  
@@ -52,12 +59,14 @@ p
     large-type()
     + p, + ul, + ol
       margin-top: $pad
+  h3
+    mono-type()
   p
     max-width: 700px
     &:not(:last-of-type)
       margin-bottom: $pad
-    + h2
-      margin-top: $pad*2
+    // + h2
+    //   margin-top: $pad*2
   ul
     //
 
@@ -65,3 +74,11 @@ p
 .app-footer
   background: $color
   color: $white
+  min-height: 200px
+
+
+.dev-mode
+  *
+    border: 3px solid red
+
+

@@ -1,4 +1,7 @@
 
+body
+  font-family: $body-font
+
 small-type()
   font-size: 13px
   font-weight: light
@@ -6,13 +9,21 @@ small-type()
 standard-type()
   font-size: 16px
   font-weight: light
+  line-height: 1.3
 
 medium-type() // these should have purposeful names... and not denote visual size or style
   font-size: 20px
   font-weight: bold
+  font-family: $heading-font
 
 large-type()
   font-size: 30px
+  font-family: $heading-font
 
 extra-large-type()
   font-size: 40px
+  font-family: $heading-font
+
+body
+  standard-type()
+  

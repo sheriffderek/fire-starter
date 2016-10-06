@@ -12,6 +12,8 @@ Router.map(function() {
   });
   this.route('style-guide', function() {
     this.route('index', { path: '/' });
+    this.route('loading-indicator');
+    this.route('color-pallet');
   });
 
   this.route('loading');

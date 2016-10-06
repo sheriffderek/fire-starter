@@ -14,7 +14,7 @@
 
     {{content-for "head-footer"}}
   </head>
-  <body>
+  <body {{if devMode 'dev-mode'}}>
     {{content-for "body"}}
 
     <div class="ember-load-indicator">

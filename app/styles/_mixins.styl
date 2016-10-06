@@ -5,6 +5,10 @@ balance-inline-block() // vertically aligns inline-block
   float: none //
   display: inline-block
   vertical-align: middle
+  
+balance-inline-block-children()
+  > *
+    balance-inline-block()
 
 translate-center() // be careful of combining translate with scale etc.
   float: none
@@ -43,3 +47,6 @@ visually-hidden()
   height 1px !important
   width 1px !important
   overflow hidden
+
+split-in($pieces)
+  width: (1/$pieces) * 100%

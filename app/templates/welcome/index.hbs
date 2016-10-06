@@ -1,8 +1,16 @@
 
 <header>
-  <h1>Welcome to Fire-starter</h1>
-  <p>Every time I start an Ember project, I install these things. Since we don't have brunch.io style skeletons, I'll be keeping this base app up to date–at least LTS for now–so that I don't need to spend so much setup time.</p>
+  <h1>Welcome to {{applicationName}}</h1>
+
+  <p>Every time I start an Ember project, I install these things. Since we don't have brunch.io style skeletons, I'll be keeping this base app up to date–at least LTS for now–so that I don't need to go through these motions any more.</p>
+
+  <p>I have to say up-front, this is going to have all it's style rules written in stylus.</p>
+
+  <p>I'm sure no one will even see this, but just in case... this is version 0.0.1 - and I'm just getting it going. I'd say it's 1/10th of what I expect it to be. <a href='https://twitter.com/sheriffderek'>@sheriffderek</a></p>
+
+  <p>The following is in order of importance:</p>
 </header>
+
 
 
 <section>
@@ -11,12 +19,16 @@
   <ul class='included-packages-list'>
     {{#each excludedPackages as |package|}}
       <li>
-        <h3><a href='{{package.url}}' target='{{package.name}}'>{{package.name}}</a></h3>
+        <a href='{{package.url}}' target='{{package.name}}'>
+          <h3>{{package.name}}</h3>
+        </a>
         <p>{{package.purpose}}</p>
       </li>
     {{/each}}
   </ul>
 </section>
+
+
 
 <section>
   <h2>Included packages:</h2>
@@ -24,12 +36,16 @@
   <ul class='included-packages-list'>
     {{#each includedPackages as |package|}}
       <li>
-        <h3><a href='{{package.url}}' target='{{package.name}}'>{{package.name}}</a></h3>
+        <a href='{{package.url}}' target='{{package.name}}'>
+          <h3>{{package.name}}</h3>
+        </a>
         <p>{{package.purpose}}</p>
       </li>
     {{/each}}
   </ul>
 </section>
+
+
 
 <section>
   <h2>CSS considerations:</h2>
@@ -37,7 +53,9 @@
   <ul class='included-packages-list'>
     {{#each cssConsiderations as |resource|}}
       <li>
-        <h3><a href='{{resource.url}}' target='{{resource.name}}'>{{resource.name}}</a></h3>
+        <a href='{{resource.url}}' target='{{resource.name}}'>
+          <h3>{{resource.name}}</h3>
+        </a>
         <p>{{resource.purpose}}</p>
       </li>
     {{/each}}
