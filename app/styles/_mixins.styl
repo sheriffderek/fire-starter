@@ -1,12 +1,12 @@
 
 @import '_convenience'
 
-balance-inline-block()
+balance-inline-block() // vertically aligns inline-block
   float: none //
   display: inline-block
   vertical-align: middle
 
-translate-center()
+translate-center() // be careful of combining translate with scale etc.
   float: none
   top: 50% 
   left: 50%
@@ -20,9 +20,10 @@ fixed-translate-center()
   fixed()
   translate-center()
 
-selectable() // make the text of certain images 'selectable'
+selectable() // make the text of certain areas 'selectable'
   user-select: text
-  
+
+// http://nicolasgallagher.com/micro-clearfix-hack/
 clear-floats() // explain
   zoom 1
   &:after
@@ -31,3 +32,14 @@ clear-floats() // explain
     display table
   &:after
     clear both
+
+// http://a11yproject.com/posts/how-to-hide-content/
+visually-hidden()
+  position absolute !important
+  clip rect(1px 1px 1px 1px)
+  clip rect(1px, 1px, 1px, 1px)
+  padding 0 !important
+  border 0 !important
+  height 1px !important
+  width 1px !important
+  overflow hidden
