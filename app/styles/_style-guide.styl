@@ -1,0 +1,50 @@
+// swatches
+.swatches
+  padding-bottom: 30px
+  div //
+    width: 100%
+    float: left
+    padding: .3rem
+    text-shadow: 0 0 2px alpha(white, .5)
+    transition: .3s padding ease-in
+
+    @media $break-point-1
+      padding: .6rem
+      split-in(3)
+      
+    @media $break-point-2
+      padding: .9rem
+
+    @media $break-point-3
+      split-in(6)
+
+    &.black
+      background: $black
+    &.white
+      background: $white
+    &.gray-dark
+      background: $gray-dark
+    &.gray
+      background: $gray
+    &.gray-light
+      background: $gray-light
+    &.gray-lighter
+      background: $gray-lighter
+    &.color-light
+      background: $color-light
+    &.color
+      background: $color
+    &.color-dark
+      background: $color-dark
+    &.highlight-light
+      background: $highlight-light
+    &.highlight
+      background: $highlight
+    &.highlight-dark
+      background: $highlight-dark
+    &.alternate-light
+      background: $alternate-light
+    &.alternate
+      background: $alternate
+    &.alternate-dark
+      background: $alternate-dark

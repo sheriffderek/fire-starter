@@ -40,14 +40,26 @@ p
 .content
   background: $gray-light
   color: $gray-dark
+  header
+    margin-bottom: $pad*2
+  section
+    margin-bottom: $pad*2
   h1
     extra-large-type()
+    + p
+      margin-top: $pad
   h2
     large-type()
+    + p, + ul, + ol
+      margin-top: $pad
   p
-    //
+    max-width: 700px
+    &:not(:last-of-type)
+      margin-bottom: $pad
+    + h2
+      margin-top: $pad*2
   ul
-    float: left
+    //
 
 // $footer
 .app-footer
