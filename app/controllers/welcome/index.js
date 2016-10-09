@@ -51,6 +51,28 @@ export default Ember.Controller.extend({
       name: 'Reset box model',
       url: 'https://www.paulirish.com/2012/box-sizing-border-box-ftw/',
       purpose: 'Sets padding and borders to stay inside their elements.'
+    },
+    {
+      name: 'SVG icon sprit',
+      url: 'http://fontastic.me/',
+      purpose: 'Quickly get solid cross-device icons that you can control with CSS and that are always crisp'
+    }
+  ],
+  routingConsiderations: [
+    {
+      name: 'Generic top-level 404 / "page not found"',
+      url: '',
+      purpose: 'People are going to type an incorrect URL and pages are going to dissapear at some point.'
+    },
+    {
+      name: 'Top-level loading route + template',
+      url: '',
+      purpose: 'Sometimes things need to load. - not done'
+    },
+    {
+      name: 'Top-level error route + template',
+      url: '',
+      purpose: 'There may be some errors.'
     }
   ]
 
