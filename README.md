@@ -4,8 +4,7 @@
 Not anywhere usable yet
 [http://fire-starter.surge.sh](http://fire-starter.surge.sh)
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This repo aims to arm you with all the basics to build small-screen-first, responsive layouts and skip the boilerplate setup that I always encounter in each new project. I build lots of short-term Ember apps, so - you may not relate - but I need to have something like a brunch.io skeleton to get things rolling. I'll try and keep it tight, but I have opinions - and they are going to be evident here. Stylus for example, is the only preprocessor I'll be working with.
 
 ## Prerequisites
 
@@ -13,8 +12,8 @@ You will need the following things properly installed on your computer.
 
 * [Git](http://git-scm.com/)
 * [Node.js](http://nodejs.org/) (with NPM)
-* [Bower](http://bower.io/)
-* [Ember CLI](http://ember-cli.com/)
+* [Bower](http://bower.io/) - possibly not for long
+* [Ember CLI](http://ember-cli.com/) 
 * [PhantomJS](http://phantomjs.org/)
 
 ## Installation
