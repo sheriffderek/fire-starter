@@ -8,21 +8,18 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('welcome', { path: '/' }, function() {
-    this.route('welcome.index', { path: '/welcome'});
+    this.route('index', { path: '/' });
   });
-
   this.route('style-guide', function() {
     this.route('index', { path: '/' });
     this.route('loading-indicator');
     this.route('color-pallet');
   });
-
   this.route('page-not-found', {
-    path: '/*wildcard' 
+    path: '/*wildcard'
   });
-  this.route('loading', { path: '/loading'} );
+  this.route('loading', { path: '/loading' });
   this.route('error');
-  
 });
 
 export default Router;
