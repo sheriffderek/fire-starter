@@ -1,12 +1,15 @@
 import Ember from 'ember';
 import config from './config/environment';
 
-const Router = Ember.Router.extend({
+const { Router } = Ember;
+
+// This is weird!
+const myRouter = Router.extend({
   location: config.locationType,
   rootURL: config.rootURL
 });
 
-Router.map(function() {
+myRouter.map(function() {
   this.route('welcome', { path: '/' }, function() {
     this.route('index', { path: '/' });
   });
@@ -22,4 +25,4 @@ Router.map(function() {
   this.route('error');
 });
 
-export default Router;
+export default myRouter;
