@@ -44,9 +44,8 @@ a
       padding: $pad*.5 $pad $pad*.5 0  
 
 // $content
-.container
-  background: $gray-light
-  color: $gray-dark
+.welcome
+  light-theme()
   header
     margin-bottom: $pad*2
   section
@@ -61,6 +60,7 @@ a
       margin-top: $pad
   h3
     mono-type()
+    font-weight: 700
   p
     max-width: 700px
     &:not(:last-of-type)
@@ -75,7 +75,6 @@ a
   background: $color
   color: $white
   min-height: 200px
-
 
 .dev-mode
   *

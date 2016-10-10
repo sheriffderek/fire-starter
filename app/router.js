@@ -17,6 +17,11 @@ myRouter.map(function() {
     this.route('index', { path: '/' });
     this.route('loading-indicator');
     this.route('color-pallet');
+    this.route('light-theme');
+    this.route('dark-theme');
+    this.route('color-theme');
+    this.route('highlight-theme');
+    this.route('alternate-theme');
   });
   this.route('page-not-found', {
     path: '/*wildcard'

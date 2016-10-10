@@ -1,5 +1,5 @@
 
-{{#section-container name='loading-indicator'}}
+{{#section-container tagName='header' name='style-guide-header'}}
 
   <h1>Style guide</h1>
 
@@ -7,10 +7,10 @@
 
 
 
-{{#section-container name=''}}
+{{#section-container name='loading-indicators'}}
 
   {{#link-to 'style-guide.loading-indicator'}}
-    <h2>loading-indicator</h2>
+    <h2>loading-indicators</h2>
   {{/link-to}}
   
   {{loading-indicator}}
@@ -47,10 +47,60 @@
 
 
 
-{{#section-container name='loading'}}
+{{#section-container name='light-theme'}}
 
-  {{#link-to 'style-guide.loading-indicator'}}
-    <h2>Another section</h2>
+  {{#link-to 'style-guide.light-theme'}}
+    <h2>Light theme</h2>
   {{/link-to}}
+
+  {{theme-content themeName='The standard theme will likely be this one'}}
+
+{{/section-container}}
+
+
+
+{{#section-container name='dark-theme'}}
+
+  {{#link-to 'style-guide.dark-theme'}}
+    <h2>Dark theme</h2>
+  {{/link-to}}
+
+  {{theme-content themeName='The dark theme looks like this'}}
+
+{{/section-container}}
+
+
+
+{{#section-container name='color-theme'}}
+
+  {{#link-to 'style-guide.color-theme'}}
+    <h2>Color theme</h2>
+  {{/link-to}}
+
+  {{theme-content themeName='Smaller areas can have this theme'}}
+
+{{/section-container}}
+
+
+
+{{#section-container name='highlight-theme'}}
+
+  {{#link-to 'style-guide.highlight-theme'}}
+    <h2>Highlight theme</h2>
+  {{/link-to}}
+
+  {{theme-content themeName='The highlight theme:'}}
+
+{{/section-container}}
+
+
+
+{{#section-container name='alternate-theme'}}
+
+  {{#link-to 'style-guide.alternate-theme'}}
+    <h2>Alternate theme</h2>
+  {{/link-to}}
+
+  {{theme-content themeName='And one more, for good measure'}}
 
 {{/section-container}}
