@@ -43,8 +43,11 @@ a
       display: block
       padding: $pad*.5 $pad $pad*.5 0  
 
+p
+  max-width: 800px
+
 // $content
-.welcome
+.editorial, .welcome // $revisit
   light-theme()
   header
     margin-bottom: $pad*2
@@ -79,6 +82,9 @@ a
 .dev-mode
   *
     border: 3px solid red
+
+.code-style
+  light-theme()
 
 h4
   color: $color

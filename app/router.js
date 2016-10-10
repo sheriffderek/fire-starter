@@ -28,6 +28,7 @@ myRouter.map(function() {
   });
   this.route('loading', { path: '/loading' });
   this.route('error');
+  this.route('code-style', function() {});
 });
 
 export default myRouter;
