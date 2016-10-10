@@ -2,7 +2,6 @@ import Ember from 'ember';
 import config from './config/environment';
 
 const { Router } = Ember;
-
 // This is weird!
 const myRouter = Router.extend({
   location: config.locationType,
@@ -23,12 +22,14 @@ myRouter.map(function() {
     this.route('highlight-theme');
     this.route('alternate-theme');
   });
+  this.route('code-style', function() {
+    this.route('index', { path: '/' });
+  });
   this.route('page-not-found', {
     path: '/*wildcard'
   });
   this.route('loading', { path: '/loading' });
   this.route('error');
-  this.route('code-style', function() {});
 });
 
 export default myRouter;
