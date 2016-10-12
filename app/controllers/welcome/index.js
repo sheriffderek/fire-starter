@@ -63,17 +63,17 @@ export default Controller.extend({
   routingConsiderations: [
     {
       name: 'Generic top-level 404 / "page not found"',
-      url: '',
+      url: '/oops',
       purpose: 'People are going to type an incorrect URL and pages are going to dissapear at some point.'
     },
     {
       name: 'Top-level loading route + template',
-      url: '',
+      url: '/loading',
       purpose: 'Sometimes things need to load. - not done'
     },
     {
       name: 'Top-level error route + template',
-      url: '',
+      url: '/error',
       purpose: 'There may be some errors.'
     }
   ]
