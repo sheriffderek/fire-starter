@@ -8,6 +8,22 @@ dev-outline($color)
   if dev-mode
     border: 1px solid $color
 
+/*
+
+// set temp wireframes true/false
+wire-frames(wire-frames-on = false)
+  if wire-frames-on
+    border 1px solid rgba(0,0,0,.05)
+    padding ($padding/2)
+    .container
+      margin-bottom $padding
+      border 1px solid rgba(0,0,0,.1)
+
+.container .etc // set temp frames to everything
+  wire-frames()
+
+*/
+
 break-point-helper($size)
   relative()
   fixed()

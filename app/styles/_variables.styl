@@ -19,12 +19,34 @@ $alternate       = #F8E7CF
 $alternate-light = lighten($alternate, 25%)
 $alternate-dark  = darken($alternate, 25%)
 
-$body-font    = 'georgia'
-$heading-font = 'helvetica'
-$monotype     = 'monespace'
-
 $inner-w-width = 1100px
 $pad = .6rem
 
 $thin-line  =  1px
 $thick-line = 3px
+
+/* previous thoughts...
+
+// shade
+shade($color, $percent)
+  mix($black, $color, $percent)
+
+// tint
+tint($color, $percent)
+  mix($white, $color, $percent)
+
+// variations
+$gray-light     = tint($gray, 50%)
+$gray-dark      = shade($gray, 50%)
+$gray-lighter   = tint($gray-light, 80%)
+
+$color-light    = tint($color, 50%)
+$color-dark     = shade($color, 50%)
+
+$highlight-light  = tint($highlight, 50%)
+$highlight-dark   = shade($highlight, 35%)
+
+$alternate-light  = tint($alternate, 50%)
+$alternate-dark   = shade($alternate, 35%)
+
+*/

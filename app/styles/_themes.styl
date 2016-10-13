@@ -5,7 +5,14 @@ light-theme()
   h1
     color: $color
   h2
+    large-type()
     color: $color-dark
+  .module // or something
+    inline-block()
+    background: $black
+    padding: $pad
+    color: $white
+    border-radius: $pad*.5
     
 dark-theme()
   background: $black
@@ -13,7 +20,16 @@ dark-theme()
   h1
     color: $highlight
   h2
+    large-type()
     color: $alternate-light
+  .module
+    inline-block()
+    background: $color
+    padding: $pad
+    color: $black
+    border-radius: $pad*.5
+    h4
+      color: $white
 
 color-theme()
   background: $color
@@ -21,7 +37,14 @@ color-theme()
   h1
     color: $white
   h2
+    large-type()
     color: $alternate-light
+  .module
+    inline-block()
+    background: $white
+    padding: $pad
+    color: $black
+    border-radius: $pad*.5
     
 highlight-theme()
   background: $highlight
@@ -29,7 +52,14 @@ highlight-theme()
   h1
     color: $white
   h2
+    large-type()
     color: $alternate-light
+  .module
+    inline-block()
+    background: $black
+    padding: $pad
+    color: $white
+    border-radius: $pad*.5
 
 alternate-theme()
   background: $alternate
@@ -37,4 +67,13 @@ alternate-theme()
   h1
     color: $alternate-dark
   h2
+    large-type()
     color: $alternate-dark
+  .module
+    inline-block()
+    background: $highlight
+    padding: $pad
+    color: $black
+    border-radius: $pad*.5
+    h4
+      color: $white
