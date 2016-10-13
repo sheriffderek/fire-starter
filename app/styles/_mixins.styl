@@ -50,3 +50,16 @@ visually-hidden()
 
 split-in($pieces)
   width: (1/$pieces) * 100%
+
+cover()
+  float: none
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  width: 100%
+  height: 100%
+
+absolute-cover()
+  absolute()
+  cover()
