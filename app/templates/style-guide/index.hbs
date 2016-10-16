@@ -11,9 +11,80 @@
 
   {{#link-to 'style-guide.loading-indicator'}}
     <h2>loading-indicators</h2>
+    <p>This is kinda the first thing you see...</p>
   {{/link-to}}
   
   {{loading-indicator}}
+
+{{/section-container}}
+
+
+
+{{#section-container name='type-layout'}}
+
+  {{#link-to 'style-guide'}}
+    <h2>Type layout</h2>
+    <p>Even if you have a default standard font, readability is core to the internet</p>
+  {{/link-to}}
+
+  <article>
+    <h1>Heading level 1</h1>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat.</p>
+
+    <h2>Heading level 2</h2>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat.</p>
+
+  </article>
+
+{{/section-container}}
+
+
+
+{{#section-container name='font-families'}}
+
+  {{#link-to 'style-guide'}}
+    <h2>Font families </h2>
+    <p>These are really more important than color, if you had to choose</p>
+  {{/link-to}}
+
+  <article>
+    <div class='font'>
+      <header>
+        <h3>Nunito-Bold</h3>
+      </header>
+
+      <main>
+        <div class='extra-large-type'>
+           {{xxx}}
+        </div>
+        <div class='large-type'>
+           {{xxx}}
+        </div>
+        <div class='medium-type'>
+           {{xxx}}
+        </div>
+        <div class='standard-type'>
+           {{xxx}}
+        </div>
+        <div class='small-type'>
+           {{xxx}}
+        </div>
+        <div class='extra-small-type'>
+           {{xxx}}
+        </div>
+
+      </main>
+    </div>
+
+  </article>
 
 {{/section-container}}
 
@@ -23,6 +94,7 @@
 
   {{#link-to 'style-guide.color-pallet'}}
     <h2>color-pallet</h2>
+    <p>Color is going to seperate the project from others and help solidify branding. Forms are probably more important, but many sites do not have them</p>
   {{/link-to}}
   
   <section class='container swatches'>
@@ -42,6 +114,105 @@
     <div class='alternate'>$alternate</div>
     <div class='alternate-dark'>$alternate-dark</div>
   </section>  
+
+{{/section-container}}
+
+
+
+{{#section-container name='input-forms'}}
+
+  {{#link-to 'style-guide'}}
+    <h2>Input forms</h2>
+    <p>Take in data - even if it's ugly, it needs to be usable</p>
+  {{/link-to}}
+
+{{/section-container}}
+
+
+
+{{#section-container name='component-patterns'}}
+
+  {{#link-to 'style-guide'}}
+    <h2>Component patterns</h2>
+    <p>You'll need some buttons to trigger actions and forms etc.</p>
+  {{/link-to}}
+
+  <h3>Buttons</h3>
+
+  <ul class='button-list reset-button-list'>
+    <li>
+      <button class='reset-button'>button.button</button>
+    </li>
+    <li>
+      <a href='javascript:void(0)' class='reset-button'>a.button</a>
+    </li>
+    <li>
+      <input type='submit' class='reset-button' value="input[type='submit']">
+    </li>
+    <li>
+      <input type='button' class='reset-button' value="input[type='button']">
+    </li>
+    <li>
+      <div class='reset-button'>div.button</div>
+    </li>
+    <li>
+      <a href='javascript:void(0)' role='reset-button'>a[roll='button']</a>
+    </li>
+  </ul>
+
+  <p>That should cover the bases...</p>
+
+  <ul class='button-list styled-button-list'>
+    <li>
+      <button class='button'>button.button</button>
+    </li>
+    <li>
+      <a href='javascript:void(0)' class='button'>a.button</a>
+    </li>
+    <li>
+      <input type='submit' class='button' value="input[type='submit']">
+    </li>
+    <li>
+      <input type='button' class='button' value="input[type='button']">
+    </li>
+    <li>
+      <div class='button'>div.button</div>
+    </li>
+    <li>
+      <a href='javascript:void(0)' role='button'>a[roll='button']</a>
+    </li>
+  </ul>
+
+  <h3>Switches</h3>
+
+  <ul class='switch-list'>
+    <li>
+      <button class='switch'>
+        <svg class='icon-x'><use xlink:href='#icon-bam'></use></svg>
+      </button>
+    </li>
+    <li>
+      <a href='javascript:void(0)' class='switch'>
+        <svg class='icon-x'><use xlink:href='#icon-bam'></use></svg>
+      </a>
+    </li>
+    <li>
+      <input type='submit' class='switch' value="input[type='submit']">
+    </li>
+    <li>
+      <input type='button' class='switch' value="input[type='button']">
+    </li>
+    <li>
+      <div class='switch'>
+        <svg class='icon-x'><use xlink:href='#icon-bam'></use></svg>
+      </div>
+    </li>
+    <li>
+      <a href='javascript:void(0)' role='switch'>
+        <svg class='icon-x'><use xlink:href='#icon-bam'></use></svg>
+      </a>
+    </li>
+  </ul>
 
 {{/section-container}}
 
