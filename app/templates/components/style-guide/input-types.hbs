@@ -1,0 +1,103 @@
+
+<header>
+  {{#link-to 'style-guide.input-types'}}
+    <h2 class='title'>Input forms</h2>
+  {{/link-to}}
+
+  <p class='description'>Take in data - even if it's ugly, it needs to be usable</p>
+</header>
+
+<main>
+  <form action='' class='example-form'>
+    
+    <label for='' class='input-w'>
+      <div class='label'>Text input label</div>
+      {{input type='text' value=textExample placeholder='Your text here...'}}
+    </label>
+
+    <label for='' class='input-w'>
+      <div class='label'>Textarea input label</div>
+      {{textarea value=textExample placeholder='Your text here...'}}
+    </label>
+
+    <ul class='radio-list'>
+      <li>
+        <label for='radio-1' class='input-w radio-w'>
+          <input id='radio-1' type='radio' name='group-name' placeholder='Your email here...'>
+          <div class='label'>Radio input label 1</div>
+        </label>
+      </li>
+      <li>
+        <label for='radio-2' class='input-w radio-w'>
+          <input id='radio-2' type='radio' name='group-name' placeholder='Your email here...'>
+          <div class='label'>Radio input label 2</div>
+        </label>
+      </li>
+      <li>
+        <label for='radio-3' class='input-w radio-w'>
+          <input id='radio-3' type='radio' name='group-name' placeholder='Your email here...'>
+          <div class='label'>Radio input label 3</div>
+        </label>
+      </li>
+    </ul>
+
+    <label for='' class='input-w'>
+      <div class='label'>Email input label</div>
+      {{input type='email' value=textExample placeholder='you@reputable.agency'}}
+    </label>
+
+    <label for='' class='input-w'>
+      <div class='label'>Password input label</div>
+      {{input type='password' value=textExample placeholder='Very$ecret?'}}
+    </label>
+
+    <label for='' class='input-w'>
+      <div class='label'>Number input label</div>
+      <input type='number' value='4200' placeholder='Your number here...'>
+    </label>
+
+    <ul class='checkbox-list'>
+      <li>
+        <label for='checkbox-1' class='input-w checkbox-w'>
+          <input id='checkbox-1' type='checkbox' placeholder='Your email here...'>
+          <div class='label'>Checkbox input label 1</div>
+        </label>
+      </li>
+      <li>
+        <label for='checkbox-2' class='input-w checkbox-w'>
+          <input id='checkbox-2' type='checkbox' placeholder='Your email here...'>
+          <div class='label'>Checkbox input label 2</div>
+        </label>
+      </li>
+      <li>
+        <label for='checkbox-3' class='input-w checkbox-w'>
+          <input id='checkbox-3' type='checkbox' placeholder='Your email here...'>
+          <div class='label'>Checkbox input label 3</div>
+        </label>
+      </li>
+    </ul>
+
+    <label for='' class='input-w'>
+      <div class='label'>Date input label</div>
+      <input type='date'>
+    </label>
+
+    <label for='' class='input-w'>
+      <div class='label'>Color input label</div>
+      <input type='color'>
+    </label>
+
+    <label for='' class='input-w'>
+      <div class='label'>Range input label</div>
+      <input type='range' step='1' min='0' max='100' value='10'>
+    </label>
+
+    <label for='' class='input-w'>
+      <div class='label'>Time input label</div>
+      <input type='time'>
+    </label>
+
+    <input type='submit' class='button' value='Submit'>
+
+  </form>
+</main>

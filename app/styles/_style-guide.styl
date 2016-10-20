@@ -3,28 +3,80 @@ header, section, footer
   width: 100%
   float: left
   
+.style-guide-section
+  padding-bottom: $pad*3
+  .title
+    statement()
+  .description
+    margin-bottom: $pad*2
+    color: $gray
+
 .container
   light-theme()
 
-.loading-indicators
-  // light-theme()
+.flag
+  display: inline-block
+  background: $black
+  color: $white
+  padding: $pad*.25 $pad
+  border-radius: $pad*.25
+  monotype()
+  lowercase()
 
+.loading-indicators
+  //
+  .spinner-list
+    //
+    li
+      float: left
+      &:not(:last-of-type)
+        margin-right: $pad*2
+
+.example-form
+  max-width: 800px
+
+.icon-list
+  li
+    float: left
+  &.extra-small
+    extra-small-icons()
+  &.small
+    small-icons()
+  &.medium
+    medium-icons()
+  &.large
+    large-icons()
+  &.extra-large
+    extra-large-icons()
+    
 .type-layout
-  // light-theme()
+  //
 
 .font-families
-  // light-theme()
+  //
+  .font-description
+    //
+    &:not(:last-of-type)
+      margin-bottom: $pad*3
+  header
+    margin-bottom: $pad
+  .big, .regular
+    word-wrap: break-word
+  .big
+    font-size: 40px
+    line-height: 1
+      
   .heading-font
     .big
       font-family: $heading-font
-      font-size: 40px
+      // line-height: 1
     .regular
       font-family: $heading-font
       font-size: 16px
   .body-font
     .big
       font-family: $body-font
-      font-size: 40px
+      // line-height: 1
     .regular
       font-family: $body-font
       font-size: 16px

@@ -15,7 +15,13 @@ myRouter.map(function() {
   this.route('style-guide', function() {
     this.route('index', { path: '/' });
     this.route('loading-indicator');
+    this.route('font-families');
+    this.route('type-voice');
     this.route('color-pallet');
+    this.route('input-types');
+    this.route('component-patterns');
+    this.route('svg-icons');
+
     this.route('light-theme');
     this.route('dark-theme');
     this.route('color-theme');

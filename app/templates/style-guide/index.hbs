@@ -1,274 +1,126 @@
 
-{{#section-container tagName='header' name='style-guide-header'}}
+{{#style-guide-section tagName='header' name='style-guide-header'}}
 
-  <h1>Style guide</h1>
+  <h1 class='page-title'>Style guide</h1>
 
-{{/section-container}}
+{{/style-guide-section}}
 
 
 
-{{#section-container name='loading-indicators'}}
+{{#style-guide-section name='loading-indicators'}}
 
-  {{#link-to 'style-guide.loading-indicator'}}
-    <h2>loading-indicators</h2>
-    <p>This is kinda the first thing you see...</p>
-  {{/link-to}}
+  {{style-guide/loading-indicators}}
+
+{{/style-guide-section}}
+
+
+
+{{#style-guide-section name='font-families'}}
+
+  {{style-guide/font-families}}
+
+{{/style-guide-section}}
+
+
+
+{{#style-guide-section name='type-voice'}}
   
-  {{loading-indicator}}
+  {{style-guide/type-voice}}
 
-{{/section-container}}
-
-
-
-{{#section-container name='type-voice'}}
-
-  {{#link-to 'style-guide'}}
-    <h2>Type voice</h2>
-    <p>Even if you have a default standard font, readability is core to the internet</p>
-  {{/link-to}}
-
-  <article>
-    <br><br>
-    <div class="whisper">Whisper is for copy like legal tid-bits and things that are least important</div>
-    <div class="quiet">Quite is for "small" or subdued copy</div>
-    <div class="standard-type">Standard type for paragraphs and anything that falls through the cracks</div>
-    <div class="statement">Statement text is short and to the point</div>
-    <div class="calm-voice">Calm voice is for quotes and relaxed attempts to grab attention</div>
-    <div class="voice">Voice is the steady clear type to get points accross</div>
-    <div class="strong-voice">Stong voice is for impactful statements</div>
-    <div class="relaxed-action">Relaxed action can be used for links that are, well, relaxed</div>
-
-  </article>
-
-{{/section-container}}
+{{/style-guide-section}}
 
 
 
-{{#section-container name='font-families'}}
+{{#style-guide-section name='color-pallet'}}
 
-  {{#link-to 'style-guide'}}
-    <h2>Font families </h2>
-    <p>These are really more important than color, if you had to choose</p>
-  {{/link-to}}
+  {{style-guide/color-pallet}} 
 
-  <article>
-    <div class='heading-font'>
-      <header>
-        <h3>Nunito-Bold</h3>
-      </header>
-      <main>
-        <div class='big'>{{xxx}}</div>
-        <div class='regular'>{{xxx}}</div>
-      </main>
-    </div>
-
-    <div class='body-font'>
-      <header>
-        <h3>Alegreya-Regular</h3>
-      </header>
-      <main>
-        <div class='big'>{{xxx}}</div>
-        <div class='regular'>{{xxx}}</div>
-      </main>
-    </div>
-
-    <div class='other-font'>
-      <header>
-        <h3>monespace</h3>
-      </header>
-      <main>
-        <div class='big'>{{xxx}}</div>
-        <div class='regular'>{{xxx}}</div>
-      </main>
-    </div>
-  </article>
-
-{{/section-container}}
+{{/style-guide-section}}
 
 
 
-{{#section-container name='color-pallet'}}
+{{#style-guide-section name='input-types'}}
 
-  {{#link-to 'style-guide.color-pallet'}}
-    <h2>color-pallet</h2>
-    <p>Color is going to seperate the project from others and help solidify branding. Forms are probably more important, but many sites do not have them</p>
-  {{/link-to}}
+  {{style-guide/input-types}}
+
+{{/style-guide-section}}
+
+
+
+{{#style-guide-section name='svg-icons'}}
+
+  {{style-guide/svg-icons}}
+
+{{/style-guide-section}}
+
+
+
+{{#style-guide-section name='component-patterns'}}
+
+  {{style-guide/component-patterns}}
+
+{{/style-guide-section}}
+
+
+
+{{#style-guide-section name='light-theme'}}
   
-  <section class='container swatches'>
-    <div class='black'>$black</div>
-    <div class='white'>$white</div>
-    <div class='gray-lighter'>$gray-lighter</div>
-    <div class='gray-light'>$gray-light</div>
-    <div class='gray'>$gray</div>
-    <div class='gray-dark'>$gray-dark</div>
-    <div class='color-light'>$color-light</div>
-    <div class='color'>$color</div>
-    <div class='color-dark'>$color-dark</div>
-    <div class='highlight-light'>$highlight-light</div>
-    <div class='highlight'>$highlight</div>
-    <div class='highlight-dark'>$highlight-dark</div>
-    <div class='alternate-light'>$alternate-light</div>
-    <div class='alternate'>$alternate</div>
-    <div class='alternate-dark'>$alternate-dark</div>
-  </section>  
+  <header>
+    {{#link-to 'style-guide.light-theme'}}
+      <h2 class='title'>Light theme</h2>
+    {{/link-to}}
+  </header>
 
-{{/section-container}}
+  <main>
+    {{theme-content themeName='The standard theme will likely be this one'}}
+  </main>
+
+{{/style-guide-section}}
 
 
 
-{{#section-container name='input-forms'}}
-
-  {{#link-to 'style-guide'}}
-    <h2>Input forms</h2>
-    <p>Take in data - even if it's ugly, it needs to be usable</p>
-  {{/link-to}}
-
-{{/section-container}}
-
-
-
-{{#section-container name='component-patterns'}}
-
-  {{#link-to 'style-guide'}}
-    <h2>Component patterns</h2>
-    <p>You'll need some buttons to trigger actions and forms etc.</p>
-  {{/link-to}}
-
-  <h3>Buttons</h3>
-
-  <ul class='button-list reset-button-list'>
-    <li>
-      <button class='reset-button'>button.button</button>
-    </li>
-    <li>
-      <a href='javascript:void(0)' class='reset-button'>a.button</a>
-    </li>
-    <li>
-      <input type='submit' class='reset-button' value="input[type='submit']">
-    </li>
-    <li>
-      <input type='button' class='reset-button' value="input[type='button']">
-    </li>
-    <li>
-      <div class='reset-button'>div.button</div>
-    </li>
-    <li>
-      <a href='javascript:void(0)' role='reset-button'>a[roll='button']</a>
-    </li>
-  </ul>
-
-  <p>That should cover the bases...</p>
-
-  <ul class='button-list styled-button-list'>
-    <li>
-      <button class='button'>button.button</button>
-    </li>
-    <li>
-      <a href='javascript:void(0)' class='button'>a.button</a>
-    </li>
-    <li>
-      <input type='submit' class='button' value="input[type='submit']">
-    </li>
-    <li>
-      <input type='button' class='button' value="input[type='button']">
-    </li>
-    <li>
-      <div class='button'>div.button</div>
-    </li>
-    <li>
-      <a href='javascript:void(0)' role='button'>a[roll='button']</a>
-    </li>
-  </ul>
-
-  <h3>Switches</h3>
-
-  <ul class='switch-list'>
-    <li>
-      <button class='switch'>
-        <svg class='icon-x'><use xlink:href='#icon-bam'></use></svg>
-      </button>
-    </li>
-    <li>
-      <a href='javascript:void(0)' class='switch'>
-        <svg class='icon-x'><use xlink:href='#icon-bam'></use></svg>
-      </a>
-    </li>
-    <li>
-      <input type='submit' class='switch' value="input[type='submit']">
-    </li>
-    <li>
-      <input type='button' class='switch' value="input[type='button']">
-    </li>
-    <li>
-      <div class='switch'>
-        <svg class='icon-x'><use xlink:href='#icon-bam'></use></svg>
-      </div>
-    </li>
-    <li>
-      <a href='javascript:void(0)' role='switch'>
-        <svg class='icon-x'><use xlink:href='#icon-bam'></use></svg>
-      </a>
-    </li>
-  </ul>
-
-{{/section-container}}
-
-
-
-{{#section-container name='light-theme'}}
-
-  {{#link-to 'style-guide.light-theme'}}
-    <h2>Light theme</h2>
-  {{/link-to}}
-
-  {{theme-content themeName='The standard theme will likely be this one'}}
-
-{{/section-container}}
-
-
-
-{{#section-container name='dark-theme'}}
+{{#style-guide-section name='dark-theme'}}
 
   {{#link-to 'style-guide.dark-theme'}}
-    <h2>Dark theme</h2>
+    <h2 class='title'>Dark theme</h2>
   {{/link-to}}
 
   {{theme-content themeName='The dark theme looks like this'}}
 
-{{/section-container}}
+{{/style-guide-section}}
 
 
 
-{{#section-container name='color-theme'}}
+{{#style-guide-section name='color-theme'}}
 
   {{#link-to 'style-guide.color-theme'}}
-    <h2>Color theme</h2>
+    <h2 class='title'>Color theme</h2>
   {{/link-to}}
 
   {{theme-content themeName='Smaller areas can have this theme'}}
 
-{{/section-container}}
+{{/style-guide-section}}
 
 
 
-{{#section-container name='highlight-theme'}}
+{{#style-guide-section name='highlight-theme'}}
 
   {{#link-to 'style-guide.highlight-theme'}}
-    <h2>Highlight theme</h2>
+    <h2 class='title'>Highlight theme</h2>
   {{/link-to}}
 
   {{theme-content themeName='The highlight theme:'}}
 
-{{/section-container}}
+{{/style-guide-section}}
 
 
 
-{{#section-container name='alternate-theme'}}
+{{#style-guide-section name='alternate-theme'}}
 
   {{#link-to 'style-guide.alternate-theme'}}
-    <h2>Alternate theme</h2>
+    <h2 class='title'>Alternate theme</h2>
   {{/link-to}}
 
   {{theme-content themeName='And one more, for good measure'}}
 
-{{/section-container}}
+{{/style-guide-section}}

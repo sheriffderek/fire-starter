@@ -1,0 +1,46 @@
+
+<header>
+  {{#link-to 'style-guide.font-families'}}
+    <h2 class='title'>Font families </h2>
+  {{/link-to}}
+
+  <p class='description'>These are really more important than color, if you had to choose</p>
+
+  <label for='typeExamples' class='input-w'>
+    <div class='label'>Try out some other copy here to see the </div>
+    {{input value=typeExamples}}
+  </label>
+
+</header>
+
+<main>
+  <article class='font-description heading-font'>
+    <header>
+      <h3 class='flag'>Nunito-Bold</h3>
+    </header>
+    <main>
+      <div class='big'>{{typeExamples}}</div>
+      <div class='regular'>{{typeExamples}}</div>
+    </main>
+  </article>
+
+  <article class='font-description body-font'>
+    <header>
+      <h3 class='flag'>Alegreya-Regular</h3>
+    </header>
+    <main>
+      <div class='big'>{{typeExamples}}</div>
+      <div class='regular'>{{typeExamples}}</div>
+    </main>
+  </article>
+
+  <article class='font-description other-font'>
+    <header>
+      <h3 class='flag'>monespace</h3>
+    </header>
+    <main>
+      <div class='big'>{{typeExamples}}</div>
+      <div class='regular'>{{typeExamples}}</div>
+    </main>
+  </article>
+</main>

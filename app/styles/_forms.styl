@@ -1,0 +1,44 @@
+
+.input-w
+  display: block
+  margin-bottom: $pad
+  .label
+    margin-bottom: $pad*.5 // *1
+  input
+    //
+  &.radio-w, &.checkbox-w
+    flex()
+    flex-direction: row
+    align-items: center
+    .label
+      margin-bottom: 0 // overrides *1  // $revisit
+    
+reset-text-input()
+  standard-type()
+  max-width: 100% // $revisit
+  width: 100%
+  border: 0
+  // border: $thin solid $color
+  
+input[type='text'],
+textarea,
+input[type='email'],
+input[type='password'],
+input[type='number'],
+input[type='date'],
+input[type='time'] // add the rest? $revisit
+  reset-text-input()
+  padding: $pad*.5 $pad
+
+textarea
+  min-height: $pad*10
+
+.radio-list, .checkbox-list
+  margin: $pad*2 0
+  input
+    margin-right: $pad
+  li
+    margin-bottom: $pad
+
+input[type='range']
+  width: 100%

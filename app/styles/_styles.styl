@@ -13,14 +13,19 @@ body
 
 a
   &:hover
-    color: $alternate-dark
+    color: $highlight-dark
 
 // $structure
 .container
   relative()
   width: 100%
   float: left
+  clear-floats()
+  overflow: hidden
   // border: $thick solid red
+
+section, header, main, footer
+  clear-floats()
 
 .inner-w
   max-width: $inner-w-width
@@ -48,8 +53,31 @@ a
       display: block
       padding: $pad*.5 $pad $pad*.5 0  
 
+ul
+  clear-floats() // $revisit
+
 p
   max-width: 800px
+
+responsive-image()
+  img
+    display: block
+    width: 100%
+    height: auto
+
+styled-list()
+  margin: 0
+  padding: 0
+  list-style: disc
+  padding-left: $pad*2
+  li
+    margin-bottom: $pad
+  
+.included-packages-list
+  styled-list()
+
+.image-w
+  responsive-image()
 
 // $content
 .editorial, .welcome // $revisit
@@ -78,6 +106,9 @@ p
   ul
     //
 
+.page-title
+  strong-voice()
+
 // $footer
 .app-footer
   background: $color
@@ -92,7 +123,17 @@ p
   light-theme()
 
 h4
-  color: $color
+  // color: $color
+
+.included-packages-list
+  h3
+    statement()
+    color: $highlight-dark
+    
+.welcome
+  h4
+    calm-voice()
+    color: $color
 
 article
   h1
