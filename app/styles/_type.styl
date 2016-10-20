@@ -3,9 +3,10 @@
 includeWebfont(family, file)
   @font-face
     font-family: family
-    src:  url(file + '.woff2') format('woff2'),
-          url(file + '.woff') format('woff'),
-          url(file + '.ttf') format('truetype') // can probably go soon
+    src:  url(file + '.woff') format('woff'),
+          url(file + '.ttf') format('truetype')
+
+// url(file + '.woff2') format('woff2') // the future
 
 includeWebfont('Alegreya-Regular', '../fonts/alegreya/Alegreya-Regular')
 includeWebfont('Nunito-Bold', '../fonts/nunito/Nunito-Bold')
