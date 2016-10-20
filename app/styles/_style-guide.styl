@@ -225,6 +225,30 @@ header, section, footer
         &.highlight
           noise($highlight)
 
+.pad-block
+  block-size($pad)
+  display: inline-block
+  background: $highlight
+
+.pad-size
+  &:after
+    content: '' + $pad
+    
+.thin-line
+  &:after
+    content: '' + $thin
+    
+.thick-line
+  &:after
+    content: '' + $thick
+
+pre.hljs
+  background: $gray-dark
+  color: $white
+  monotype()
+  margin: $pad 0
+  border-radius: $pad*.25
+
 .input-forms
   //
 

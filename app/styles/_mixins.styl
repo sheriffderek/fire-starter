@@ -10,7 +10,7 @@ balance-inline-block-children()
   > *
     balance-inline-block()
 
-translate-center() // be careful of combining translate with scale etc.
+translate-center() // be careful of combining translate with scale etc... if only it didn't override...
   float: none
   top: 50% 
   left: 50%
@@ -68,3 +68,19 @@ noise($fillColor = $color)
   background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4543/noise.png')
   background-size: 100px
   background-color: $fillColor
+  
+flex-center-children()
+  display: flex
+  align-items: center
+  justify-content: center
+
+grid-in($parts = 1, $gutter = 2%)
+  > *  //
+    float: left
+    width: (  (100%/$parts) -  (  ( ($parts - 1) * $gutter )  / ($parts)   ) )
+    margin-right: $gutter
+    &:nth-of-type( {$parts}n + {$parts} )
+      margin-right: 0
+
+
+

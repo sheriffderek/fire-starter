@@ -17,4 +17,10 @@ App = Application.extend({
 
 loadInitializers(App, config.modulePrefix);
 
+// BEGIN-SNIPPET my-nice-example
+function sample(){
+  return 42;
+};
+// END-SNIPPET
+
 export default App;
