@@ -119,10 +119,19 @@ header, section, footer
       width: 100%
       float: left
       padding: $pad*.5
-      text-shadow: 0 0 1px alpha(white, .7)
+      // text-shadow: 0 0 1px alpha(white, .7)
       transition: .3s padding ease-in
-      height: 60px
+      height: 80px
       line-height: 1.1
+      @media $break-point-2
+        height: 150px
+        margin-right: $pad
+        margin-bottom: $pad
+      .var, .hex
+        width: 100%
+        float: left
+      .hex
+        opacity: .4
       @media $break-point-1
         padding: .6rem
         split-in(3)
@@ -132,34 +141,89 @@ header, section, footer
         split-in(6)
       &.black
         background: $black
+        color: alpha($white, .7)
+        .hex
+          &:after
+            content: '' + $black
       &.white
         background: $white
+        .hex
+          &:after
+            content: '' + $white
       &.gray-dark
         background: $gray-dark
+        .hex
+          &:after
+            content: '' + $gray-dark
       &.gray
         background: $gray
+        .hex
+          &:after
+            content: '' + $gray
       &.gray-light
         background: $gray-light
+        .hex
+          &:after
+            content: '' + $gray-light
       &.gray-lighter
         background: $gray-lighter
+        .hex
+          &:after
+            content: '' + $gray-lighter
       &.color-light
         background: $color-light
+        .hex
+          &:after
+            content: '' + $color-light
       &.color
         background: $color
+        .hex
+          &:after
+            content: '' + $color
       &.color-dark
         background: $color-dark
+        .hex
+          &:after
+            content: '' + $color-dark
       &.highlight-light
         background: $highlight-light
+        .hex
+          &:after
+            content: '' + $highlight-light
       &.highlight
         background: $highlight
+        .hex
+          &:after
+            content: '' + $highlight
       &.highlight-dark
         background: $highlight-dark
+        .hex
+          &:after
+            content: '' + $highlight-dark
       &.alternate-light
         background: $alternate-light
+        .hex
+          &:after
+            content: '' + $alternate-light
       &.alternate
         background: $alternate
+        .hex
+          &:after
+            content: '' + $alternate
       &.alternate-dark
         background: $alternate-dark
+        .hex
+          &:after
+            content: '' + $alternate-dark
+      &.texture
+        min-width: 100%
+        height: 100px
+        &.color
+          noise($color)
+        &.gray-light
+          noise($gray-light)
+        &.highlight
+          noise($highlight)
 
 .input-forms
   //
