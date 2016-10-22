@@ -36,7 +36,9 @@ break-point-helper($size)
   border-color: transparent transparent alpha($black, .5) transparent;
   display: none
   if break-point-helper
-    display: block // $revisit
+    // display: block // $revisit
+  @media $break-point-1
+    display: block
   span
     block()
     fixed()

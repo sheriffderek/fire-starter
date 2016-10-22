@@ -3,7 +3,7 @@ import Ember from 'ember';
 const { Controller } = Ember;
 
 export default Controller.extend({
-  applicationName: 'Fire-starter',
+
   excludedPackages: [
     {
       name: 'ember-welcome-page',
@@ -55,7 +55,7 @@ export default Controller.extend({
       purpose: 'Sets padding and borders to stay inside their elements.'
     },
     {
-      name: 'SVG icon sprit',
+      name: 'SVG icon sprite',
       url: 'http://fontastic.me/',
       purpose: 'Quickly get solid cross-device icons that you can control with CSS and that are always crisp'
     }

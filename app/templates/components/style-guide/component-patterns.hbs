@@ -38,7 +38,7 @@
         </li>
       </ul>
 
-      <p class='description'>That should cover the bases...</p>
+      <p class='description'>That should cover the bases... but there is a minor inconsistency with the alignment... div.button and a.button site a px or 2 higher than the others... fix this?</p>
 
       <ul class='button-list styled-button-list'>
         <li>
@@ -74,28 +74,28 @@
     <ul class='switch-list'>
       <li>
         <button class='switch'>
-          <svg class='icon-x'><use xlink:href='#icon-bam'></use></svg>
+          {{svg-icon symbol='arrow-circle-up'}}
         </button>
       </li>
       <li>
         <a href='javascript:void(0)' class='switch'>
-          <svg class='icon-x'><use xlink:href='#icon-bam'></use></svg>
+          {{svg-icon symbol='arrow-circle-down'}}
         </a>
       </li>
-      <li>
+{{!--       <li>
         <input type='submit' class='switch' value='input[type="submit"]'>
       </li>
       <li>
         <input type='button' class='switch' value='input[type="button"]'>
-      </li>
+      </li> --}}
       <li>
         <div class='switch'>
-          <svg class='icon-x'><use xlink:href='#icon-bam'></use></svg>
+          {{svg-icon symbol='arrow-circle-up'}}
         </div>
       </li>
       <li>
         <a href='javascript:void(0)' role='switch'>
-          <svg class='icon-x'><use xlink:href='#icon-bam'></use></svg>
+          {{svg-icon symbol='arrow-circle-down'}}
         </a>
       </li>
     </ul>

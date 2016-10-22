@@ -12,14 +12,15 @@
     align-items: center
     .label
       margin-bottom: 0 // overrides *1  // $revisit
-    
+
 reset-text-input()
   standard-type()
   max-width: 100% // $revisit
   width: 100%
   border: 0
-  // border: $thin solid $color
-  
+  border-radius: 0
+  // appearance: none // $revisit
+
 input[type='text'],
 textarea,
 input[type='email'],
@@ -29,6 +30,11 @@ input[type='date'],
 input[type='time'] // add the rest? $revisit
   reset-text-input()
   padding: $pad*.5 $pad
+
+input[type='email'],
+input[type='password'],
+textarea // ?
+  appearance: text
 
 textarea
   min-height: $pad*10
