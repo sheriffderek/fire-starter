@@ -1,0 +1,96 @@
+
+@import 'partials/_convenience'
+
+
+// $setup
+selectable() 
+  user-select: text
+  // make the text of certain areas 'selectable'
+
+// $positioning
+balance-inline-block()
+  float: none //
+  display: inline-block
+  vertical-align: middle
+  
+balance-inline-block-children()
+  > *
+    balance-inline-block()
+    // vertically aligns inline-block
+
+translate-center() 
+  float: none
+  top: 50% 
+  left: 50%
+  transform: translate(-50%, -50%)
+  // be careful of combining translate with scale etc... if only it didn't override...
+
+absolute-translate-center()
+  absolute()
+  translate-center()
+
+fixed-translate-center()
+  fixed()
+  translate-center()
+
+clear-floats()
+  zoom 1
+  &:after
+  &:before
+    content ''
+    display table
+  &:after
+    clear both
+    // you are 'clearing floats' not 'fixing a clear' vs clearfix()
+    // http://nicolasgallagher.com/micro-clearfix-hack/
+
+split-in($pieces)
+  width: (1/$pieces) * 100%
+
+cover()
+  float: none
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  width: 100%
+  height: 100%
+
+absolute-cover()
+  absolute()
+  cover()
+  
+fixed-cover()
+  fixed()
+  cover()
+
+flex-center-children()
+  display: flex
+  align-items: center
+  justify-content: center
+
+grid-in($parts = 1, $gutter = 2%)
+  > *  //
+    float: left
+    width: (  (100%/$parts) -  (  ( ($parts - 1) * $gutter )  / ($parts)   ) )
+    margin-right: $gutter
+    &:nth-of-type( {$parts}n + {$parts} )
+      margin-right: 0
+
+// $display
+visually-hidden()
+  position absolute !important
+  clip rect(1px 1px 1px 1px)
+  clip rect(1px, 1px, 1px, 1px)
+  padding 0 !important
+  border 0 !important
+  height 1px !important
+  width 1px !important
+  overflow hidden
+  // http://a11yproject.com/posts/how-to-hide-content/
+
+// $texture
+noise($fillColor = $color)
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4543/noise.png')
+  background-size: 100px
+  background-color: $fillColor

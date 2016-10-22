@@ -2,13 +2,18 @@
 @import '_cursor-reset'
 @import '_user-select-reset'
 
-html
+// $reset defaults
+html  
   box-sizing: border-box
-  *
+  *, *:before, *:after
     box-sizing: inherit
+    // set box model:
+    // https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+
 
 html, body
   // height: 100%
+  // depending on a few things, this may be a good default
 
 body
   margin: 0
@@ -24,3 +29,4 @@ ul, ol
   li
     &:not(:last-of-type)
       // margin-bottom: $pad // not working out... setup styled list...
+      // too broad
