@@ -39,6 +39,8 @@ input[type='button'],
 input[type='reset'],
 div
   //
+  &.button, &[role='button'], &.switch, &[role='switch']
+    cursor: pointer
   &.button, &[role='button']
     reset-button()
     background: $white
@@ -51,16 +53,11 @@ div
     uppercase()
     box-sizing: border-box
     font-size: 12px
+    balance-inline-block-children()
     &:hover
       background: $highlight
       color: $white
-
-button,
-a,
-input[type='submit'],
-input[type='button'],
-input[type='reset'],
-div
+  //
   &.switch, &[role='switch']
     reset-button()
     display: inline-block
@@ -73,6 +70,11 @@ div
       height: 100%
     &:hover
       color: $highlight-dark
+  &.async
+    //
+    .text
+      margin-right: $pad
+    
     
 .switch-list
   li

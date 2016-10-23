@@ -119,6 +119,17 @@ styled-list()
   *
     border: 3px solid red
 
+kbd
+  background: $gray-dark
+  color: white
+  display: inline-block
+  padding: 0 $pad*.5
+  border-radius: $pad*.25
+  monotype()
+  font-size: 12px
+  // for keyboard-like commands such as cd (change directory)
+  // basically... input vs 'code'
+
 .code-style
   light-theme()
 
@@ -129,7 +140,7 @@ h4
   h3
     statement()
     color: $highlight-dark
-    
+
 .welcome
   h4
     calm-voice()

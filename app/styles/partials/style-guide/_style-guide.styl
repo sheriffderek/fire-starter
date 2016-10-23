@@ -1,7 +1,7 @@
 
-header, section, footer
-  width: 100%
-  float: left
+// header, section, footer
+//   width: 100%
+//   float: left // ? ? ? ?
 
 .style-guide-section
   padding-bottom: $pad*3
@@ -42,6 +42,7 @@ main
 
 .icon-list
   overflow: auto
+  border-left: 1px solid $highlight-dark
   li
     display: inline-block
   &.extra-small
@@ -55,6 +56,12 @@ main
   &.extra-large
     extra-large-icons()
   &:nth-of-type(1)
+    //
+  &.x
+    li
+      &:nth-of-type(1)
+        display: none
+      
     //
   // &:nth-of-type(4)
   //   li
@@ -87,6 +94,11 @@ main
     line-height: 1
       
   .heading-font
+    //
+    .font
+      .name
+        &:after
+          content: '' + $heading-font
     .big
       font-family: $heading-font
       // line-height: 1
@@ -94,6 +106,11 @@ main
       font-family: $heading-font
       font-size: 16px
   .body-font
+    //
+    .font
+      .name
+        &:after
+          content: '' + $body-font
     .big
       font-family: $body-font
       // line-height: 1
@@ -101,12 +118,26 @@ main
       font-family: $body-font
       font-size: 16px
   .other-font
+    //
+    .font
+      .name
+        &:after
+          content: '' + $monotype
     .big
       font-family: $monotype
       font-size: 40px
     .regular
       font-family: $monotype
       font-size: 16px
+
+table
+  border: $thin solid $gray
+  font-size: 10px
+  tr, td
+    border: $thin solid $gray
+    padding: $pad*.25 $pad*.5
+  td
+    min-width: 100px
 
 .type-voice
   .inner-w
@@ -135,7 +166,7 @@ main
   // swatches
   .swatches
     padding-bottom: $pad*2
-    div //
+    li
       width: 100%
       float: left
       padding: $pad*.5
@@ -145,20 +176,21 @@ main
       line-height: 1.1
       @media $break-point-2
         height: 150px
-        margin-right: $pad
-        margin-bottom: $pad
+        // margin-right: $pad
+        // margin-bottom: $pad
       .var, .hex
         width: 100%
         float: left
       .hex
         opacity: .4
       @media $break-point-1
-        padding: .6rem
+        // padding: .6rem
+        padding: $pad
         split-in(3)
       @media $break-point-2
-        padding: .9rem
+        // padding: .9rem
       @media $break-point-3
-        split-in(6)
+        // split-in(6)
       &.black
         background: $black
         color: alpha($white, .7)
@@ -245,22 +277,31 @@ main
         &.highlight
           noise($highlight)
 
-.pad-block
-  block-size($pad)
-  display: inline-block
-  background: $highlight
-
-.pad-size
-  &:after
-    content: '' + $pad
-    
-.thin-line
-  &:after
-    content: '' + $thin
-    
-.thick-line
-  &:after
-    content: '' + $thick
+.unit-list
+  li
+    padding: $pad
+    margin-bottom: $pad
+  .pad-example
+    background: $black
+    > div
+      background: $white
+  .pad-block
+    block-size($pad)
+    display: inline-block
+    background: $black
+  .pad-size
+    &:after
+      content: '' + $pad
+  .thin-line
+    border: $thin solid $black
+    .thin-line-size
+      &:after
+        content: '' + $thin
+  .thick-line
+    border: $thick solid $black
+    .thick-line-size
+      &:after
+        content: '' + $thick
 
 pre.hljs
   background: $gray-dark
@@ -296,3 +337,8 @@ pre.hljs
 
 .alternate-theme
   alternate-theme()
+
+.icon-inconsistency-example
+  large-icons()
+  svg
+    border: 1px solid $highlight-dark
