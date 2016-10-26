@@ -28,6 +28,7 @@ myRouter.map(function() {
     this.route('highlight-theme');
     this.route('alternate-theme');
     this.route('spacing-units');
+    this.route('styled-lists');
   });
   this.route('code-style', function() {
     this.route('index', { path: '/' });

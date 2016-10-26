@@ -138,3 +138,41 @@ urgent()
     
 serious()
   //
+    
+// $lists
+styled-lists()
+  //
+  ul, ol
+    display: block
+    width: 100%
+    float: left
+    border: 1px solid $gray-light
+    padding-left: $pad*2
+    margin: $pad 0
+    li
+      margin-bottom: $pad
+  ul
+    list-style: circle
+    color: $black
+    ul
+      list-style: disc
+      color: $color-dark
+      ul
+        list-style: circle
+        color: $gray-dark
+  ol
+    list-style: decimal
+    color: $black
+    ol
+      list-style: lower-latin
+      color: $color-dark
+      ol
+        list-style: lower-roman
+        color: $gray-dark
+
+.styled-lists
+  styled-lists()
+
+
+
+
