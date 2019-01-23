@@ -3,19 +3,20 @@
 
 ## An Emberjs skeleton + some ideas on how to learn Ember
 
-You could use it... but it's not 1.0.0 or anything exactly. It's mean to be forked - or cloned. Maybe later I'll version the style rules. It's just a jumping off point.
+You could use it... but it's not 1.0.0 or anything exactly. It's meant to be forked - or cloned. Maybe later I'll version the style rules. But this is just a jumping off point.
 
-Living style guide: [http://fire-starter.surge.sh](http://fire-starter.surge.sh)
-Learn Ember demo app: [http://learn-ember-demo.surge.sh](http://learn-ember-demo.surge.sh)
+- _**Living style guide**_ demo: [http://fire-starter.surge.sh](http://fire-starter.surge.sh)
+
+- _**Learn Ember**_ demo: [http://learn-ember-demo.surge.sh](http://learn-ember-demo.surge.sh)
 
 
 ### Choose your own adventure (_branch_)
 
-1. `live-style-guide` - The addons you'll almost always install + a thoughtful set of style rules to get right to work + a starter style guide
+1. [live-style-guide](https://github.com/sheriffderek/fire-starter) - The addons you'll almost always install + a thoughtful set of style rules to get right to work + a starter style guide
 
-2. `learn-ember` - a readme for each building block, and clear examples of each of the main concepts
+2. [learn-ember](https://github.com/sheriffderek/fire-starter/tree/learn-ember) - a readme for each building block, and clear examples of each of the main concepts
 
-3. `basic` - just the style rules - for other types of projects
+3. [basic](https://github.com/sheriffderek/fire-starter/tree/basic) - just the style rules - for other types of projects
 
 
 ## Prerequisites
