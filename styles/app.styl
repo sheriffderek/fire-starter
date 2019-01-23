@@ -1,50 +1,8 @@
 
 @import 'basic/index'
 
-.fire-starter-theme
-	@import 'fire-starter-theme'
-
-
-.component.media-poster
-	figure
-		background: $gray-light
-	img
-		opaicty: 1
-		transition: .5s
-	footer
-		margin-top: $v*.5
-		//
-		opacity: 1
-		transition: 1s
-	&.loading
-		img
-			opacity: 0
-		footer
-			opacity: 0
-	&.max
-		max-width: 300px
-
-
-.component.media-grid
-	//
-	.item-list
-		display: flex
-		flex-direction: row
-		flex-wrap: wrap
-		.item
-			margin-bottom: $v*3
-			// width: 100% // oops
-	@media $break-point-1-2
-		.item-list
-			grid-in(2)
-	@media $break-point-2-3
-		.item-list
-			grid-in(3)
-	@media $break-point-3
-		.item-list
-			grid-in(4)
-
-
-.style-guide-media-grid
-	.page-content
-		background: $highlight-light
+.theme-name
+	// @import 'file-name'
+		
+body
+	background: $color
