@@ -1,0 +1,58 @@
+
+{{svg-sprite}}
+
+<header class='page-section site-header'>
+	<div class='inner-w'>
+
+		{{#link-to 'application' class="link home-link"}}
+			{{svg-icon symbol='fire'}}
+
+			<h1 class='application-name'>
+				<span>{{applicationName}}</span>
+			</h1>
+		{{/link-to}}
+
+
+		<nav class='menu'>
+			<ul class='item-list'>
+				<li class='item'>
+					{{#link-to 'welcome' class='link'}}
+						<span>welcome</span>
+					{{/link-to}}
+				</li>
+
+				<li class='item'>
+					{{#link-to 'style-guide' class='link'}}
+						<span>style guide</span>
+					{{/link-to}}
+				</li>
+
+				<li class='item'>
+					{{#link-to 'about' class='link'}}
+						<span>about</span>
+					{{/link-to}}
+				</li>
+			</ul>
+		</nav>
+
+	</div>
+</header>
+
+
+<main class='page-content'>
+	{{liquid-outlet}}
+</main>
+
+
+<footer class='page-section site-footer'>
+	<div class='inner-w'>
+
+		<h2>Footer</h2>
+
+	</div>
+</footer>
+
+
+{{#if devMode}}
+	{{break-point-helper}}
+{{/if}}

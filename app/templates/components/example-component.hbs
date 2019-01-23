@@ -1,0 +1,14 @@
+
+<ul class='item-list'>
+	{{#each things as |thing|}}
+		<li class='item'>
+			<figure class='image'>
+				<img src='https://placehold.it/1600x900' alt="`{{thing.name}} thumbnail`" />
+			</figure>
+
+			<h3 class="name">
+				<span>{{thing.name}}</span>
+			</h3>
+		</li>
+	{{/each}}
+</ul>
