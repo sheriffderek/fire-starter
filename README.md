@@ -1,13 +1,9 @@
-# fire-starter
+# Basic
 
 
-## An Emberjs skeleton + some ideas on how to learn Ember
+## An set of style rules - written in stylus
 
-You could use it... but it's not 1.0.0 or anything exactly. It's meant to be forked - or cloned. Maybe later I'll version the style rules. But this is just a jumping off point.
-
-- _**Living style guide**_ demo: [http://fire-starter.surge.sh](http://fire-starter.surge.sh)
-
-- _**Learn Ember**_ demo: [http://learn-ember-demo.surge.sh](http://learn-ember-demo.surge.sh)
+Just a carefully selected set of style rules that have served me well. Not a framework / just a way of thinking. Just grab them from here: 
 
 
 ### Choose your own adventure (_branch_)
