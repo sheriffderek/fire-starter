@@ -1,0 +1,28 @@
+
+block-size($width, $height = $width) // should be just size... or element-size...
+  width: $width
+  height: $height
+
+// base icons styles (fontastic.me)
+[class^="icon-"], [class*=" icon-"]
+  display: inline-block
+  fill: currentColor
+
+$standard-icon-size = 25px
+.icon-x
+  block-size($standard-icon-size)
+
+// icon patterns
+$extra-small-icon-size = 12px
+extra-small-icons()
+  .icon-x
+    block-size($extra-small-icon-size)
+
+$small-icon-size = 18px
+small-icons()
+  .icon-x
+    block-size($small-icon-size)
+
+standard-icons()
+  .icon-x
+    block-size($standard-icon-size)

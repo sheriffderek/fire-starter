@@ -1,0 +1,32 @@
+
+@keyframes sk-rotateplane
+  0% 
+    -webkit-transform: perspective(120px)
+  50% 
+    -webkit-transform: perspective(120px) rotateY(180deg)
+  100% 
+    -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg)
+
+.spinner
+  block-size(44px)
+  background: $gray-dark
+  animation: sk-rotateplane 1.2s infinite ease-in-out
+
+.ember-load-indicator
+  fixed-translate-center()
+
+.loading-indicator
+  .spinner
+    background: $black
+  &.highlight
+    .spinner
+      background: $highlight
+  &.dark
+    .spinner
+      background: $gray-dark
+  &.light
+    .spinner
+      background: $white
+  &.color
+    .spinner
+      background: $color

@@ -1,0 +1,83 @@
+
+reset-button()
+  background: transparent
+  border: 0
+  margin: 0 // ?
+  padding: 0
+  appearance: none
+  color: black
+  font-familily: inherit // not working
+  display: inline-block
+  width: auto;
+  user-select: none
+  font: inherit
+  border-radius: 0
+  // line-height: normal;
+  overflow: visible // ?
+  // text-decoration: none;
+  // white-space: pre;
+  //
+  // cursor: pointer
+  // background: gray
+  // color: black
+  // font-size: 16px
+  // padding: .25rem .5rem
+  // min-width: 160px
+  // text-align: center
+  
+  &:focus
+    outline: 0
+  &:hover
+    color: inherit
+
+.reset-button, [role='reset-button']
+  reset-button()
+
+button,
+a,
+input[type='submit'],
+input[type='button'],
+input[type='reset'],
+div
+  //
+  &.button, &[role='button'], &.switch, &[role='switch']
+    cursor: pointer
+  &.button, &[role='button']
+    reset-button()
+    background: $white
+    padding: $pad $pad*2
+    border: $thick solid $highlight
+    color: $highlight
+    min-width: 220px
+    text-align: center
+    standard-type()
+    uppercase()
+    box-sizing: border-box
+    font-size: 12px
+    balance-inline-block-children()
+    &:hover
+      background: $highlight
+      color: $white
+  //
+  &.switch, &[role='switch']
+    reset-button()
+    display: inline-block
+    width: 44px
+    height: 44px
+    overflow: hidden
+    color: $highlight
+    .icon-x
+      width: 100%
+      height: 100%
+    &:hover
+      color: $highlight-dark
+  &.async
+    //
+    .text
+      margin-right: $pad
+    
+    
+.switch-list
+  li
+    display: inline-block
+    vertical-align: middle
