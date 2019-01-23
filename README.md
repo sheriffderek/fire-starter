@@ -24,22 +24,21 @@ You could use it... but it's not 1.0.0 or anything exactly. It's meant to be for
 You will need the following things properly installed on your computer.
 
 * [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/) (with npm)
+* [Node.js](https://nodejs.org/) (with npm) (and yarn)
 * [Ember CLI](https://ember-cli.com/)
-
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone <repository-url>` this repository (or using a desktop client like [Tower](https://www.git-tower.com))
 * `cd fire-starter`
-* `npm install`
+* `yarn` or `npm install`
 
 
 ## Running / Development
 
-* `ember serve`
+* `ember serve` to serve in development mode _or_ `ember serve -prod` to serve in production mode
 * Visit your app at [http://localhost:4200](http://localhost:4200).
-* Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
+* Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests). (there are currently no tests)
 
 
 ### Code Generators
@@ -68,7 +67,7 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+That's up to you. Currently using surge.sh (ember-surge)
 
 
 ## Further Reading / Useful Links
@@ -77,4 +76,6 @@ Specify what it takes to deploy your app.
 * [ember-cli](https://ember-cli.com/)
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector)
+* [Ember community channel on Discourse](https://discordapp.com/invite/zT3asNS)
+*	[Ember community forum](https://discuss.emberjs.com)
