@@ -1,13 +1,11 @@
-# fire-starter
+# fire-starter: - Learn Ember
 
 
-## An Emberjs skeleton + some ideas on how to learn Ember
+## Install the project - and Look at the fill structure
 
-You could use it... but it's not 1.0.0 or anything exactly. It's meant to be forked - or cloned. Maybe later I'll version the style rules. But this is just a jumping off point.
+In theory... you could dig around in this app's straight forward file structure / _see the examples_ - and read each _README_ in say: `app/components/learn-components.md`  --- and have a solid example of the standard use-cases for each building block - and see how they are connected. I'd also like to include a set of challenges to offer - so that you can solidify your understanding.
 
 - _**Living style guide**_ demo: [http://fire-starter.surge.sh](http://fire-starter.surge.sh)
-
-- _**Learn Ember**_ demo: [http://learn-ember-demo.surge.sh](http://learn-ember-demo.surge.sh)
 
 
 ### Choose your own adventure (_branch_)
