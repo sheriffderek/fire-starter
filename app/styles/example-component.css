@@ -1,0 +1,49 @@
+
+.example-component {
+	border: 1px solid rgba(255, 255, 255, .5);
+	border-radius: 4px;
+	padding: 10px;
+	max-width: 400px;
+	margin-bottom: 20px;
+	transition: opacity .2s;
+}
+
+.example-component.hidden {
+	opacity: 0;
+}
+
+.example-component .title {
+	margin-bottom: 30px;
+}
+
+.example-component .interface input {
+	display: block;
+	width: 100%;
+	padding: 6px 10px;
+	background: black;
+	color: gray;
+}
+
+.example-component .interface input:focus {
+	background: white;
+	color: black;
+}
+
+.example-component .interface button {
+	margin-top: 10px;
+}
+
+.example-component .preview {
+	opacity: .5;
+	font-size: 10px;
+}
+
+.example-component .footer {
+	font-size: 10px;
+	margin-top: 10px;
+}
+
+
+/*
+leave notes about how you can use pod-style file/structure - and module reunificatoin
+*/

@@ -1,0 +1,29 @@
+
+{{!-- 'handlbars'-style templating comments are written like this --}}
+
+<h1 class='welcome-message'>
+	{{appName}}
+	{{!-- include your dynamic properties from the controller (in this case 'application' controller --}}
+</h1>
+
+<nav class='routes'>
+	<ul class='item-list'>
+		<li class='item'>
+			{{link-to 'application' 'application' class='home'}} {{!-- inline link-to --}}
+		</li>
+
+		<li class='item'>
+			{{#link-to 'some-lists'}}
+				<span>Some Lists</span>
+			{{/link-to}} {{!-- 'block' link-to --}}
+		</li>
+
+		<li class='item'>
+			<a href='/bla-bla-bla'>example missing route</a>
+		</li> {{!-- faked this one - because Ember's router doesn't want you to fail - and it gives you route transition hooks to do much better things than this - like redirect etc. --}}
+	</ul>
+</nav>
+
+<main class='outlet page-content'>
+	{{outlet}}
+</main>

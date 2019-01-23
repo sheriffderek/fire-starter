@@ -1,0 +1,30 @@
+
+{{#if title}}
+	<h2 class='title'>
+		<span>{{title}}</span>
+	</h2>
+{{/if}}
+
+<aside class='interface'>
+	{{input value=currentText focus-in='clearInput'}} {{!-- special Ember 'input-helper' --}}
+
+	<button {{action 'yell' currentText}}>
+		<span>Yell</span>
+	</button> 
+
+	<span class='preview'>
+		<em>{{currentText}}</em>
+	</span>
+</aside>
+
+<output class='error'>
+	{{#if showHint}}
+		<p>Please enter something to yell</p>
+	{{/if}}
+</output>
+
+{{#if (has-block)}} {{!-- if you use this component in 'block' format... --}}
+	<footer class='footer'>
+		{{yield}} {{!-- ...whatever is inbetween - will go here --}}
+	</footer>
+{{/if}}

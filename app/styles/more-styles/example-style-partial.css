@@ -1,0 +1,25 @@
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	color: inherit;
+}
+
+.welcome-message {
+	font-size: 30px;
+}
+
+@media (min-width: 500px) {
+	.welcome-message {
+		font-size: 6vw;
+	}
+}
+
+.error {
+	font-size: 10px;
+	color: orange;
+}
+
+/* the live-refreshing kinda flikers / but I think that's because we're using standard @import CSS stuff. With a preprocessor - I never see that */

@@ -1,0 +1,56 @@
+
+/* What is this? some example (standard) CSS rules */
+
+@import 'more-styles/example-style-partial.css';
+@import 'example-component.css'; /* consider using a preprocessor + alernate ways of pulling together files */
+
+body {
+	background: #333333;
+	color: rgba(255, 255, 255, .8);
+	font-family: 'helvetica-light';
+	max-width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 1rem;
+}
+
+.ember-view {
+	border: 1px solid rgba(255, 0, 255, .3);
+	padding: .5rem;
+	margin-bottom: .5rem;
+}
+
+.outlet {
+	border: 1px solid rgba(255, 255, 0, .3);
+	padding: .5rem;
+}
+
+.routes .item-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	align-items: center;
+}
+
+a {
+	display: inline-block;
+}
+
+.routes .item-list .item:not(:first-of-type) {
+	margin-left: 1rem;
+}
+
+.routes a.home.active {
+	color: lightgreen; /* 'application is the top level route... so it's ALSO 'active' */
+}
+
+.routes a.active {
+	color: lightblue;
+}
+
+.routes.sub a.active {
+	color: wheat;
+}
+
+/* Any fun information about how this is pulled into the build / and how they don't cause 'page' reload - and other cool information and links + link to readme */
