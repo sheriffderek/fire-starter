@@ -1,10 +1,19 @@
 # fire-starter
 
-##An Emberjs skeleton
-Not anywhere usable yet
+## An Emberjs skeleton + some ideas on how to learn Ember
+
+You could use it... but it's not 1.0.0 or anything exactly. It's mean to be forked - or cloned. Maybe later I'll version the style rules. It's just a jumping off point.
+
 [http://fire-starter.surge.sh](http://fire-starter.surge.sh)
 
-This repo aims to arm you with all the basics to build small-screen-first, responsive layouts and skip the boilerplate setup that I always encounter in each new project. I build lots of short-term Ember apps, so - you may not relate - but I need to have something like a brunch.io skeleton to get things rolling. I'll try and keep it tight, but I have opinions - and they are going to be evident here. Stylus for example, is the only preprocessor I'll be working with.
+### Choose your own adventure (_branch_)
+
+1. `live-style-guide` - The addons you'll almost always install + a thoughtful set of style rules to get right to work + a starter style guide
+
+2. `learn-ember` - a readme for each building block, and clear examples of each of the main concepts
+
+3. `basic` - just the style rules - for other types of projects
+
 
 ## Prerequisites
 
@@ -12,7 +21,6 @@ You will need the following things properly installed on your computer.
 
 * [Git](http://git-scm.com/)
 * [Node.js](http://nodejs.org/) (with NPM)
-* [Bower](http://bower.io/) - possibly not for long
 * [Ember CLI](http://ember-cli.com/) 
 * [PhantomJS](http://phantomjs.org/)
 
