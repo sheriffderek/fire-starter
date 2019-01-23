@@ -1,8 +1,0 @@
-{
-  "name": "fire-starter",
-  "dependencies": {
-    "ember": "~2.9.0-beta.1",
-    "ember-cli-shims": "0.1.3",
-    "firebase": "^3.0.0"
-  }
-}
