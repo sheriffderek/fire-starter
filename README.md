@@ -5,7 +5,8 @@
 
 You could use it... but it's not 1.0.0 or anything exactly. It's mean to be forked - or cloned. Maybe later I'll version the style rules. It's just a jumping off point.
 
-[http://fire-starter.surge.sh](http://fire-starter.surge.sh)
+Living style guide: [http://fire-starter.surge.sh](http://fire-starter.surge.sh)
+Learn Ember demo app: [http://learn-ember-demo.surge.sh](http://learn-ember-demo.surge.sh)
 
 
 ### Choose your own adventure (_branch_)
